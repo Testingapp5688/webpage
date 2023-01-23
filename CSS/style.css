@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: auto;
+    background-color: #F3EDE5;
+    font-family: 'Times New Roman', Times, serif;
+    min-width: 250px;
+    max-width: 2100px;
+}
+.bcontain{
+    width: 100vw;
+    height: auto;
+    background-color: #F3EDE5;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+.header ul{
+    position: relative;
+}
+.pop{
+    position: absolute;
+    left: -70px;
+    top:50px;
+    width: 370px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 15px;
+    display: none;
+}
+.header img,.header ul,.header .try{
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.header ul li:hover{
+    color:#251C3B;
+}
+.header ul li{
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 15px;
+    color: #878684;
+    cursor: pointer;
+}
+.up2{
+    left: 30px;
+}
+.up3{
+    left: 120px;
+}
+.up4{
+    left: 190px;
+}
+.pop::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    left: 110px;
+    transform: rotate(45deg);
+}
+.lo{
+    margin-top: -25px;
+}
+table tr td:nth-child(1)
+{
+    color: #808F9B;
+    font-size: small;
+    padding-bottom: 5px;
+}
+.try{
+    width: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.try a{
+    color: #878684;
+    text-decoration: none;
+}
+.try button{
+    width: 100px;
+    height: 40px;
+    background-color:#133416;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.boody{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+.boody .contain{
+    width: 68%;
+    height: 100%;
+    padding-top: 150px;
+    padding: 100px;
+}
+.boody .contain h1{
+    font-size:55px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+.boody .contain button{
+    width: 100px;
+    height: 40px;
+    background-color:#133416;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0px;
+    font-weight: bolder;
+    display: block;
+    margin-bottom:10px;
+}
+.boody .contain h1 #special{
+    color:orange ;
+}
+.boody .contain p{
+    color: #777675;
+}
+.boody .contain p:nth-child(4){
+    display: inline-block;
+}
+.boody .contain img{
+    width: 15px;
+    height: 15px;
+}
+.boody .image{
+    width: 30%;
+    height: 100%;
+    margin: 100px 50px 50px 0;
+}
+.boody .image img{
+    width: 320px;
+    height: 320px;
+}
+.footer{
+    width: 100%;
+    height: auto;
+}
+.footer p{
+    margin: 8px;
+    padding: 8px;
+    text-align: center;
+    color: #777675;
+}
+.footer .photo img{
+    margin: 10px 30px;
+    width: 220px;
+    height: 55px;
+}
+.footer .photo{
+    display: flex;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Below code is used to style the css moblie*/
+.header .mobliemenu{
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    background-image: url(../Assets/Icons/Menu.svg);
+    margin-right: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+body .mopop{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 3px;
+}
+.mopop .close{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+.pop1,.mopop{
+    margin-top: 10px;
+    padding: 5px;
+    display: none;
+}
+.momenu{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ececea;
+    position: absolute;
+    top: 50px;
+    right: -120%;
+    transition: 0.5s linear;
+    display: none;
+}
+.show{
+    right: 0;
+    display: block;
+}
+.momenu ul li{
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #777675;
+    margin-bottom: 2px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color:#251C3B;
+}
+.momenu ul li:hover{
+    transform: scale(110%);
+}
+
+
+.last{
+    width: 100%;
+    height: 270px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #77767541;
+}
+.pksimage{
+    width: 250px;
+    height: 250px;
+    background-image: url(../Assets/Image/admin.jpg);
+    background-size: 250px 250px;
+}
+.last .details{
+    width: 250px;
+    height: auto;
+}
+.last .details h1{
+    color: black;
+}
+.last .details h3{
+    color: orangered;
+}
+.last .details p{
+    color: #3b3b3a;
+    text-align: justify;
+}
+.last .details button{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 15px;
+    border: none;
+}
+#call{
+    border: 2px solid rgb(0, 128, 0);
+    color: green;
+    line-height: 2px;
+    box-shadow: green 0px 2px 4px 0px, green 0px 2px 16px 0px;
+}
+#call:hover{
+    background-color: green;
+    color: white;
+}
+#tele{
+    border: 2px solid #31A8E0;
+    color: #31A8E0;
+    line-height: 2px;
+    box-shadow: #31A8E0 0px 2px 4px 0px, #31A8E0 0px 2px 16px 0px;
+}
+#tele:hover{
+    background-color: #31A8E0;
+    color: white;
+}
+#mail{
+    border: 2px solid #F72200;
+    color: #F72200;
+    line-height: 2px;
+    box-shadow:#F72200 0px 2px 4px 0px, #F72200 0px 2px 16px 0px;
+}
+#mail:hover{
+    background-color: #F72200;
+    color: white;
+}
+
+@media (max-width:988px) {
+    .header .mobliemenu{
+        display: block;
+    }
+    .header ul{
+        display: none;
+    }
+    .header .try{
+        display: none;
+    }
+    .boody .image{
+        display: none;
+    }
+    .boody .contain{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .boody .contain h1{
+        font-size: 33px;
+    }
+    .last{
+        flex-direction: column;
+        height: auto;
+    }
+    .pksimage{
+        margin-top:45px ;
+    }
+    .last .details{
+        margin-bottom: 15px;
+    }
+}
